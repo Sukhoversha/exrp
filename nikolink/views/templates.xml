@@ -14,6 +14,32 @@
             <xpath expr="/t/t/div/table/tbody/t[3]/t[3]/tr/td" position="attributes">
                 <attribute name="colspan">101</attribute>
             </xpath>
+            <xpath expr="/t/t/div/table/thead/tr/th[3]" position="after">
+                <th>
+                    <span>Net Amount</span>
+                </th>
+            </xpath>
+            <xpath expr="/t/t/div/table/tbody/t[3]/tr/t[1]/td[2]" position="after">
+                <td>
+                    <span t-field="line.net_amount"/>
+                </td>
+            </xpath>
+            <xpath expr="/t/t/div/table/tbody/t[3]/t[3]/tr/td" position="attributes">
+                <attribute name="colspan">102</attribute>
+            </xpath>
+            <xpath expr="/t/t/div/table/thead/tr/th[3]" position="after">
+                <th>
+                    <span>Net Price</span>
+                </th>
+            </xpath>
+            <xpath expr="/t/t/div/table/tbody/t[3]/tr/t[1]/td[2]" position="after">
+                <td>
+                    <span t-field="line.net_price"/>
+                </td>
+            </xpath>
+            <xpath expr="/t/t/div/table/tbody/t[3]/t[3]/tr/td" position="attributes">
+                <attribute name="colspan">102</attribute>
+            </xpath>
         </template>
     </data>
 </odoo>
