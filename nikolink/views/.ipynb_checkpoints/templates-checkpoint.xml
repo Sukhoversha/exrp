@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <template id="inherit_invoice_report_nikolink" inherit_id="account.report_invoice_document_with_payments">
+            <xpath expr="/t/t/div/table/thead/tr/th[7]" position="after">
+                <th>
+                    <span>Tax Amount</span>
+                </th>
+            </xpath>
+            <xpath expr="/t/t/div/table/tbody/t[3]/tr/t[1]/td[6]" position="after">
+                <td>
+                    <span t-field="line.tax_amount"/>
+                </td>
+            </xpath>
+            <xpath expr="/t/t/div/table/tbody/t[3]/t[3]/tr/td" position="attributes">
+                <attribute name="colspan">101</attribute>
+            </xpath>
+        </template>
+    </data>
+</odoo>
