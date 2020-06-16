@@ -6,7 +6,7 @@
                     <span>Tax Amount</span>
                 </th>
             </xpath>
-            <xpath expr="/t/t/div/table/tbody/t[3]/tr/t[1]/td[6]" position="after">
+            <xpath expr="/t/t/div/table/tbody/t[3]/tr/t[1]/td[6]" position="before">
                 <td>
                     <span t-field="line.tax_amount"/>
                 </td>
